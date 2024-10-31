@@ -1,0 +1,22 @@
+# PASCAL VOC dataset http://host.robots.ox.ac.uk/pascal/VOC/
+# Train command: python train.py --data voc.yaml
+# Default dataset location is next to /yolov5:
+#   /parent_folder
+#     /VOC
+#     /yolov5
+
+
+# download command/URL (optional)
+# download: bash data/scripts/get_voc.sh
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: D:\yolov5\VOC\Annotatioins3\image  # 16551 images
+val: D:\yolov5\VOC\text\image # 4952 images
+
+# number of classes
+nc: 30
+
+# class names
+names: ['手', '手拿纸巾', '纸巾', '玻璃片', '试纸', '用纸巾擦拭玻璃片', '贴有试纸的玻璃片', '玻璃棒', '试剂瓶', '倒放的橡胶瓶塞', '倒放的玻璃瓶塞', '将试剂滴在试纸上',
+        '擦拭玻璃棒', '玻璃棒蘸取溶液', '试管', '试剂瓶倒入试管', '胶头滴管', '胶头滴管滴试管', '变色的试纸', '干净的试验台', '正放的橡胶瓶塞', '正放的玻璃瓶塞', '抹布',
+        '标签向手心', '冲洗池', '玻璃盖试剂瓶', '橡胶盖试剂瓶', '纸巾擦拭玻璃棒', '抹布擦拭玻璃棒', '抹布擦拭玻璃片']
